@@ -1,0 +1,7 @@
+---
+- name: install Xorg
+  pacman: name=xorg-server state=present
+
+- name: Install Xinit
+  pacman: name=xorg-xinit state=present
+  

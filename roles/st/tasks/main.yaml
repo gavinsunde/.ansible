@@ -1,4 +1,0 @@
----
-- name: install git #version control
-  pacman: name=git state=present
-  become: yes
