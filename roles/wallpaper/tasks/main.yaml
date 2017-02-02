@@ -1,0 +1,10 @@
+---
+- name: install feh
+  pacman: name=feh
+  become: yes
+
+- name: configure wallpaper script
+  template: src=fehbg dest=/home/{{ user.name }}/.fehbg owner={{ user.name }} group=users
+  become: yes
+  become_user: "{{ user.name }}"
+
