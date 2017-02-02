@@ -1,1 +1,3 @@
 tmp
+playbook.retry
+host_vars/localhost

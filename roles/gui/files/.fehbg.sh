@@ -1,5 +1,5 @@
 #!/bin/bash
-wallpaper="/home/{{ user.name }}/.wallpaper/*"
+wallpaper="/home/{{ user_name }}/.wallpaper/*"
 if [ -f "${wallpaper}" ]; then
   feh  --randomize --bg-scale "${wallpaper}"
 fi

@@ -4,7 +4,7 @@
   become: yes
 
 - name: Configure .tmux.conf
-  copy: src=.tmux.conf dest="/home/{{ user.name }}/.tmux.conf owner={{ user.name}} group=users
+  copy: src=.tmux.conf dest="/home/{{ user_name }}/.tmux.conf owner={{ user_name}} group=users
   become: yes
-  become_user: {{ user.name }}
+  become_user: {{ user_name }}
   

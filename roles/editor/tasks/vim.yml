@@ -4,29 +4,29 @@
   become: yes
 
 - name: create .vimrc dir
-  file: path="/home/{{ user.name }}/.vim/bundle" owner={{ user.name }} group=users state=directory
+  file: path="/home/{{ user_name }}/.vim/bundle" owner={{ user_name }} group=users state=directory
   become: yes
-  become_user: {{ user.name }}
+  become_user: {{ user_name }}
 
 - name: install Vundle
-  git: repo=https://github.com/gmarik/Vundle.vim.git dest="/home/{{ user.name }}/.vim/bundle/Vundle.vim" accept_hostkey=yes
+  git: repo=https://github.com/gmarik/Vundle.vim.git dest="/home/{{ user_name }}/.vim/bundle/Vundle.vim" accept_hostkey=yes
   become: yes
-  become_user: {{ user.name }}
+  become_user: {{ user_name }}
 
 - name: configure .vimrc
-  copy: src=vimrc dest=/home/{{ user.name }}/.vimrc owner={{ user.name }} group=users
+  copy: src=vimrc dest=/home/{{ user_name }}/.vimrc owner={{ user_name }} group=users
   become: yes
-  become_user: {{ user.name }}
+  become_user: {{ user_name }}
 
 - name: install and update Vundle plugins
   command: "/usr/bin/vim +PluginUpdate +qall!"
   become: yes
-  become_user: {{ user.name }}
+  become_user: {{ user_name }}
 
 - name: install YouCompleteMe
-  command: "python /home/{{ user.name }}/.vim/bundle/YouCompleteMe/install.py"
+  command: "python /home/{{ user_name }}/.vim/bundle/YouCompleteMe/install.py"
   args:
-    chdir: "/home/{{ user.name }}/.vim/bundle/YouCompleteMe"
+    chdir: "/home/{{ user_name }}/.vim/bundle/YouCompleteMe"
   become: yes
-  become_user: {{ user.name }}
+  become_user: {{ user_name }}
 
