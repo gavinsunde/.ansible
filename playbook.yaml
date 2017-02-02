@@ -3,6 +3,7 @@
 
   roles:
     - role: user
+    - role: util
     - role: editor
 
   vars_prompt:

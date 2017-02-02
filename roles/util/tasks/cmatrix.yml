@@ -1,0 +1,4 @@
+---
+- name: Install cmatrix
+  pacman: name=cmatrix state=present
+  become: yes

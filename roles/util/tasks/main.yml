@@ -1,0 +1,7 @@
+---
+- include: cmatrix.yml
+- include: git.yml
+- include: htop.yml
+- include: rsync.yml
+- include: sl.yml
+- include: wget.yml
