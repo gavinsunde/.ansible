@@ -3,8 +3,7 @@
   pacman: name=feh
   become: yes
 
-- name: configure wallpaper script
-  template: src=fehbg dest=/home/{{ user_name }}/.fehbg owner={{ user_name }} group=users
+- name: Background
+  copy: src=.wallpapers/ dest="/home/{{ user_name}}/.wallpapers/" owner={{ user_name }} group={{ user_name }}
   become: yes
-  become_user: "{{ user_name }}"
 
