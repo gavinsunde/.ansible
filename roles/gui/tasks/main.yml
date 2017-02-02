@@ -3,6 +3,8 @@
 #- include: redshift.yml
 #- include: screensaver.yml
 - include: wallpaper.yml
-#- include: x.yml
+- include: x.yml
+- include: video.yml
+- include: dwm.yml
 
 

@@ -4,7 +4,7 @@
   become: yes
 
 - name: create .vimrc dir
-  file: path="/home/{{ user_name }}/.vim/bundle" owner="{{ user_name }}" group=gavin state=directory
+  file: path="/home/{{ user_name }}/.vim/bundle" owner={{ user_name }} group={{ user_name }} state=directory
   become: yes
   become_user: "{{ user_name }}"
 

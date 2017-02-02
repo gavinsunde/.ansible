@@ -1,0 +1,12 @@
+---
+- name: Create gui dir.
+  file: path="/home/{{ user_name }}/.gui/dwm" owner={{ user_name }} group={{ user_name }} state=directory
+  become: yes
+  become_user: "{{ user_name }}"
+  
+- name: Get dwm source
+  git: repo=https://github.com/gavinsunde/dwm.git dest="/home/{{ user_name }}/.gui/dwm"
+  become: yes
+  become_user: "{{ user_name }}"
+
+ 

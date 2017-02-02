@@ -1,0 +1,7 @@
+---
+- name: Install grapics driver
+  pacman: name=nvidia state=present
+
+- name: Install libgl
+  pacman: name=nvidia-libgl state=present
+

@@ -5,3 +5,5 @@
 - name: Install Xinit
   pacman: name=xorg-xinit state=present
   
+- name: Install Xorg-server-utils
+  pacman: name=xorg-server-utils state=present
