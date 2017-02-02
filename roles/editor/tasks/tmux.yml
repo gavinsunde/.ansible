@@ -1,0 +1,10 @@
+---
+- name: Install tmux #Terminal Multiplexer
+  pacman: name=tmux state=present
+  become: yes
+
+- name: Configure .tmux.conf
+  copy: src=.tmux.conf dest="/home/{{ user.name }}/.tmux.conf owner={{ user.name}} group=users
+  become: yes
+  become_user: {{ user.name }}
+  
