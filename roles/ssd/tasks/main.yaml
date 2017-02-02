@@ -1,4 +1,4 @@
 ---
-- name: install git #version control
-  pacman: name=git state=present
+- name: install ssd tooling #version control
+  pacman: name=???/? state=present
   become: yes

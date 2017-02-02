@@ -1,4 +1,4 @@
 ---
-- name: install git #version control
-  pacman: name=git state=present
+- name: install redshift #version control
+  pacman: name=redshift state=present
   become: yes

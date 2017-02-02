@@ -2,3 +2,11 @@
 - name: install git #version control
   pacman: name=git state=present
   become: yes
+
+- name: Configure git #version control
+  git_config: name=user.name value="{{ git.name }}" scope=global
+  become: yes
+
+- name: Configure git #version control
+  git_config: name=user.email value="{{ git.email }}" scope=global
+  become: yes

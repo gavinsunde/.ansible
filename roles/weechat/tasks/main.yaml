@@ -1,4 +1,4 @@
 ---
-- name: install git #version control
-  pacman: name=git state=present
+- name: install weechat #version control
+  pacman: name=weechat state=present
   become: yes

@@ -1,4 +1,4 @@
 ---
-- name: install git #version control
-  pacman: name=git state=present
+- name: install firejail #version control
+  pacman: name=firejail state=present
   become: yes
