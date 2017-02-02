@@ -1,4 +1,4 @@
 ---
+- include: tmux.yml
 - include: vim.yml
-- inlcude: tmux.yml
 
