@@ -1,0 +1,6 @@
+---
+- name: Configure .bashrc
+  copy: src=.bashrc dest="/home/{{ user_name }}/.bashrc" owner={{ user_name}} group={{ user_name }}
+  become: yes
+  become_user: "{{ user_name }}"
+  
