@@ -3,7 +3,7 @@
 
   roles:
     - role: user
-    - role: util
+    - role: utils
     - role: editor
     - role: gui
 
