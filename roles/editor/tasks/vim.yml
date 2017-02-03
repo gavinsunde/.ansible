@@ -14,16 +14,15 @@
   become_user: "{{ user_name }}"
 
 - name: configure .vimrc
-  copy: src=.vimrc dest=/home/{{ user_name }}/.vimrc owner={{ user_name }} group=gavin
+  copy: src=.vimrc dest=/home/{{ user_name }}/.vimrc owner={{ user_name }} group={{ user_name }}
   become: yes
   become_user: "{{ user_name }}"
 
 - name: install and update Vundle plugins
-  #  command: "/usr/bin/vim +PluginUpdate +qall!"
-  shell: "/usr/bin/vim -E -c 'source ~/.vimrc' -c PluginInstall -c qa"
+  command: "/usr/bin/vim -E -c 'source ~/.vimrc' +PluginUpdate +qall"
   become: yes
   become_user: "{{ user_name }}"
-  ignore_errors: yes
+
 #
 #- name: install YouCompleteMe
 #  command: "python /home/{{ user_name }}/.vim/bundle/YouCompleteMe/install.py"

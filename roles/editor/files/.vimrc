@@ -46,7 +46,7 @@ set ruler
 
 syntax on
 let g:solarized_termcolors=256
-colorscheme solarized
+silent! colorscheme solarized
 set background=dark
 set hlsearch
 
