@@ -39,3 +39,9 @@ This is the ansible config for my arch linux systems.
   - dwarffortress in terminal
 - tags
 
+## Post install
+### SUDO
+sudo is not enabled, use visudo to uncomment:
+'''
+# %wheel ALL=(ALL) ALL
+'''
