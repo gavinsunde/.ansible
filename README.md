@@ -19,7 +19,7 @@ This is the ansible config for my arch linux systems.
 ### ssd
 [ ] Should review ssd lifecycle improvements.
 ### user 
-[ ] rename ymls
+[x] rename ymls
 ### utils
 [ ] Keep updated with any new finds.
 ### virt
@@ -42,6 +42,6 @@ This is the ansible config for my arch linux systems.
 ## Post install
 ### SUDO
 sudo is not enabled, use visudo to uncomment:
-'''
+```
 # %wheel ALL=(ALL) ALL
-'''
+```

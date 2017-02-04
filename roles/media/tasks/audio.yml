@@ -1,0 +1,14 @@
+---
+- name: Install audio library
+  pacman: name=alsa-utils state=present
+  become: yes
+
+- name: Unmute Master
+  shell: /usr/bin/amixer sset Master unmute
+
+- name: Set Master volume to max
+  shell: /usr/bin/amixer sset Master 200%
+
+- name: Install pianobar
+  pacman: name=pianobar state=present
+  become: yes

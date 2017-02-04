@@ -1,0 +1,4 @@
+---
+- name: install vlc #version control
+  pacman: name=vlc state=present
+  become: yes

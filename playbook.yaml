@@ -7,6 +7,7 @@
     - role: editor
     - role: gui
     - role: web
+    - role: media
 
   vars_prompt:
     - name: user_password
