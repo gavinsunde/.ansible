@@ -1,0 +1,6 @@
+---
+- name: Install Zathura document viewer
+  pacman: name=zathura state=present
+
+- name: Install Zathura pdf plugin
+  pacman: name=zathura-pdf-mupdf state=present

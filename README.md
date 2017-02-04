@@ -6,9 +6,11 @@ This is the ansible config for my arch linux systems.
 ### editor
 [x] bashrc editor file
 [x] st install
+[ ] sudo
 ### gui
 [x] dwm compilation & config
 [x] fonts - xresource hinitng, consider liberation or ttf-dejavu. TERM USE: ttf-hack
+[x] wallpaper
 [ ] screensaver?
 ### ~~laptop~~ 
 ### ~~media~~ 
@@ -24,8 +26,7 @@ This is the ansible config for my arch linux systems.
 [ ] kvm (+manager)
 [ ] ~~docker~~
 ### web
-[ ] browser 
-[ ] weehcat 
+[x] browser 
 
 
 ## Ideas

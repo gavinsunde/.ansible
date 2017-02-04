@@ -1,4 +1,0 @@
----
-- name: install weechat #version control
-  pacman: name=weechat state=present
-  become: yes
