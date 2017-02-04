@@ -5,8 +5,16 @@
   become_user: "{{ user_name }}"
   
 - name: Get dwm source
-  git: repo=https://github.com/gavinsunde/dwm.git dest="/home/{{ user_name }}/.gui/dwm"
+  git: repo=https://github.com/gavinsunde/dwm.git dest="/home/{{ user_name }}/.gui/dwm.git"
+  version: grs/6.1
   become: yes
   become_user: "{{ user_name }}"
+
+- name: Build dwm
+  shell: `make clean install >> build.log`
+  args:
+    chdir: "/home/{{ user_name }}/.gui/dwm/"
+    creates: build.log
+
 
  

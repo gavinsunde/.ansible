@@ -7,3 +7,6 @@
   
 - name: Install Xorg-server-utils
   pacman: name=xorg-server-utils state=present
+
+- name: Install Xft libs (required for dwm)
+  pacman: name=libxft state=present

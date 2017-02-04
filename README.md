@@ -7,7 +7,7 @@ This is the ansible config for my arch linux systems.
 [x] bashrc editor file
 ### gui
 [ ] dwm compilation & config
-[ ] fonts?
+[ ] fonts - xresource hinitng, consider liberation or ttf-dejavu. TERM USE: ttf-hack
 [ ] st install goes where?
 [ ] screensaver?
 ### ~~laptop~~ 
