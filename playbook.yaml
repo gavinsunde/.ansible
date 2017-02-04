@@ -6,6 +6,7 @@
     - role: utils
     - role: editor
     - role: gui
+    - role: web
 
   vars_prompt:
     - name: user_password

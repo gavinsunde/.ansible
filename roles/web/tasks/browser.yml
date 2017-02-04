@@ -1,0 +1,4 @@
+---
+- name: Install Firefox web browser
+  pacman: name=firefox state=present
+  become: yes
