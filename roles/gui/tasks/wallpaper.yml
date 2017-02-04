@@ -1,5 +1,5 @@
 ---
-- name: install feh
+- name: Install feh
   pacman: name=feh
   become: yes
 
@@ -7,3 +7,15 @@
   copy: src=.wallpapers/ dest="/home/{{ user_name}}/.wallpapers/" owner={{ user_name }} group={{ user_name }}
   become: yes
 
+- name: bg.timer to systemd unit folder
+  copy: src=bg.timer dest="/etc/systemd/system/" owner=root group=root
+  
+- name: bg.service to systemd unit folder
+  copy: src=bg.service dest="/etc/systemd/system/" owner=root group=root
+
+- name: Enable timer
+  systemd:
+    name: bg.timer
+    state: started
+    enabled: yes
+    daemon_reload: yes
