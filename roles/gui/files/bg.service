@@ -2,4 +2,5 @@
 Description=Rotate wallpaper every 30 minutes
 
 [Service]
+Environment=DISPLAY=:0 XAUTHORITY=/home/gavin/.Xauthority
 ExecStart=/usr/bin/feh --randomize --bg-scale /home/gavin/.wallpapers/

@@ -2,7 +2,7 @@
 Description=Rotate wallpaper every 30 minutes
 
 [Timer]
-OnCalendar=*:0/2
+OnCalendar=*:0/30
 Persistent=true
 Unit=bg.service
 
