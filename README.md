@@ -8,7 +8,7 @@ This is the ansible config for my arch linux systems.
 [x] st install
 ### gui
 [x] dwm compilation & config
-[ ] fonts - xresource hinitng, consider liberation or ttf-dejavu. TERM USE: ttf-hack
+[x] fonts - xresource hinitng, consider liberation or ttf-dejavu. TERM USE: ttf-hack
 [ ] screensaver?
 ### ~~laptop~~ 
 ### ~~media~~ 

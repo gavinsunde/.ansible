@@ -1,0 +1,21 @@
+---
+- name: Create st dir.
+  file: path="/home/{{ user_name }}/.gui/st" owner={{ user_name }} group={{ user_name }} state=directory
+  become: yes
+  become_user: "{{ user_name }}"
+  
+- name: Get st source
+  git: repo=https://github.com/gavinsunde/st.git dest="/home/{{ user_name }}/.gui/st"
+  args:
+    version: grs/0.7
+  become: yes
+  become_user: "{{ user_name }}"
+
+- name: Compile st
+  shell: make clean install >> compile.log
+  args:
+    chdir: "/home/{{ user_name }}/.gui/st/"
+    creates: compile.log
+  become: yes
+  become_method: sudo
+

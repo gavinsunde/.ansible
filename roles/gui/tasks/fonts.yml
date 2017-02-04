@@ -1,4 +1,16 @@
 ---
-- name: install font_configs #version control
-  pacman: name=??? state=present
+- name: Install terminal font 'fira mono'
+  pacman: name=ttf-fira-mono state=present
+  become: yes
+
+- name: Install other fonts 'liberation'b 
+  pacman: name=ttf-liberation state=present
+  become: yes
+
+- name: Install xrdb for Xresources
+  pacman: name=xorg-xrdb state=present
+  become: yes
+
+- name: Create .Xresourcs file (with fonts)
+  copy: src=.Xresources dest="/home/{{ user_name }}/" owner={{ user_name }} group={{ user_name }}
   become: yes
