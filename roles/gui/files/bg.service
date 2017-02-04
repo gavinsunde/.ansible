@@ -2,4 +2,4 @@
 Description=Rotate wallpaper every 30 minutes
 
 [Service]
-ExecStart=/usr/bin/feh --randomize --bg-scale /home/gavin/.wallpapers/*
+ExecStart=/usr/bin/feh --randomize --bg-scale /home/gavin/.wallpapers/

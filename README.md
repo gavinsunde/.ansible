@@ -26,3 +26,9 @@ This is the ansible config for my arch linux systems.
 ### web
 [ ] browser 
 [ ] weehcat 
+
+
+## Ideas
+- bashrc for root
+- tags
+
