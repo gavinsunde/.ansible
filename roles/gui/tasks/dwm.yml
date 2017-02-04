@@ -23,6 +23,7 @@
 - name: xinitrc config w/ dwm
   copy: src=.xinitrc dest="/home/{{ user_name}}/" owner={{ user_name }} group={{ user_name }}
   become: yes
+  become_user: "{{ user_name }}"
 
 - name: Install dmenu
   pacman: name=dmenu state=present 

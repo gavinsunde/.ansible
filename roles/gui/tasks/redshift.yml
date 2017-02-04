@@ -1,4 +1,14 @@
 ---
-- name: install redshift #version control
+- name: install redshift
   pacman: name=redshift state=present
   become: yes
+
+- name: Create config file folder
+  file: path="/home/{{ user_name }}/.config/" owner={{ user_name }} group={{ user_name }} state=directory
+  become: yes
+  become_user: "{{ user_name }}"
+
+- name: Copy config file
+  copy: src=redshift.conf dest="/home/{{ user_name }}/.config/redshift.conf" owner={{ user_name }} group={{ user_name }}
+  become: yes
+  become_user: "{{ user_name }}"

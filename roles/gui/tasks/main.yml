@@ -1,6 +1,6 @@
 ---
 - include: fonts.yml
-#- include: redshift.yml
+- include: redshift.yml
 #- include: screensaver.yml
 - include: wallpaper.yml
 - include: x.yml
