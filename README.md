@@ -31,5 +31,11 @@ This is the ansible config for my arch linux systems.
 
 ## Ideas
 - bashrc for root
+- st config
+- dwm config
+- dmenu config
+- ssh
+- Games section
+  - dwarffortress in terminal
 - tags
 
