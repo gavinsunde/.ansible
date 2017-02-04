@@ -55,6 +55,6 @@ fi
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
 feh --randomize --bg-scale /home/gavin/.wallpapers/
-redshift
+redshift &
 
 exec dwm
