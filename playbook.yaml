@@ -9,7 +9,7 @@
 
   vars_prompt:
     - name: user_password
-      prompt: "Enter user password:"
+      prompt: "Enter user password"
       private: yes
       encrypt: "md5_crypt" # Requires python-passlib installed on system.
       confirm: yes

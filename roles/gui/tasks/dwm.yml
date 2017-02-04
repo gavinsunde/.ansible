@@ -5,16 +5,25 @@
   become_user: "{{ user_name }}"
   
 - name: Get dwm source
-  git: repo=https://github.com/gavinsunde/dwm.git dest="/home/{{ user_name }}/.gui/dwm.git"
-  version: grs/6.1
+  git: repo=https://github.com/gavinsunde/dwm.git dest="/home/{{ user_name }}/.gui/dwm"
+  args:
+    version: grs/6.1
   become: yes
   become_user: "{{ user_name }}"
 
-- name: Build dwm
-  shell: `make clean install >> build.log`
+- name: Compile dwm
+  shell: make clean install >> compile.log
   args:
     chdir: "/home/{{ user_name }}/.gui/dwm/"
-    creates: build.log
+    creates: compile.log
+  become: yes
+  #  become_user: "{{ user_name }}"
+  become_method: sudo
 
+- name: xinitrc config w/ dwm
+  copy: src=.xinitrc dest="/home/{{ user_name}}/" owner={{ user_name }} group={{ user_name }}
+  become: yes
 
- 
+- name: Install dmenu
+  pacman: name=dmenu state=present 
+
