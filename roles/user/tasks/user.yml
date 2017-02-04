@@ -5,10 +5,3 @@
 - name: Create user and add to group
   user: name={{ user_name }} group={{ user_name }} password={{ user_password }} update_password=on_create
 
-- name: install sudo
-  pacman: name=sudo state=present
-
-- name: Add user to wheel group
-  user: name={{ user_name }} groups=wheel append=yes
-
-#- name: Copy sudo config
