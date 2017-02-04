@@ -5,10 +5,10 @@ This is the ansible config for my arch linux systems.
 ## TODO
 ### editor
 [x] bashrc editor file
+[x] st install
 ### gui
 [x] dwm compilation & config
 [ ] fonts - xresource hinitng, consider liberation or ttf-dejavu. TERM USE: ttf-hack
-[ ] st install goes where?
 [ ] screensaver?
 ### ~~laptop~~ 
 ### ~~media~~ 
