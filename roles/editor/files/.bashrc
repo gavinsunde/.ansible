@@ -17,10 +17,10 @@ export PATH=$PATH:./
 
 alias ls='ls --color=auto'
 
-alias t='TERM=screen-256color tmux'
+alias t='tmux ls'
+alias t0='TERM=screen-256color tmux attach -t 0 || tmux new -s 0'
+alias t1='TERM=screen-256color tmux attach -t 1 || tmux new -s 1'
 alias ta='TERM=screen-256color tmux attach -t'
-#alias td='TERM=screen-256color tmux detach'
-alias ts='TERM=screen-256color tmux switch -t'
 
 alias pacman='sudo pacman'
 
