@@ -6,5 +6,5 @@
 - include: x.yml
 - include: drivers.yml
 - include: dwm.yml
-
+- include: st.yml
 

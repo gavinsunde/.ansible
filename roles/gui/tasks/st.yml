@@ -19,3 +19,10 @@
   become: yes
   become_method: sudo
 
+- name: Copy st0 startup script
+  copy: src=st0 dest=/usr/local/bin/st0
+  become: yes
+
+- name: Copy st1 startup scripts
+  copy: src=st1 dest=/usr/local/bin/st1
+  become: yes

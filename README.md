@@ -14,7 +14,7 @@ This is the ansible config for my arch linux systems.
 [ ] screensaver?
 ### ~~laptop~~ 
 ### ~~media~~ 
-[ ] Audio (alsa lib)
+[x] Audio (alsa lib)
 ### ~~security~~ 
 ### ssd
 [ ] Should review ssd lifecycle improvements.
