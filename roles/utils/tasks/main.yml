@@ -1,7 +1,15 @@
 ---
+# 'cmatrix' makes the terminal look like the matrix
 - include: cmatrix.yml
+# 'git' is used for version/source control
 - include: git.yml
+# 'htop' is a system monitor
 - include: htop.yml
+# 'rsync' syncs files
 - include: rsync.yml
+# 'sl' breifly locks the terminal when you mis-type 'ls'
 - include: sl.yml
+# 'wget' gets url's from the web
 - include: wget.yml
+# 'ssh' connects to other systems
+- inlcude: ssh.yml

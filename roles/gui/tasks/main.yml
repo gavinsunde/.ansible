@@ -1,10 +1,18 @@
 ---
-- include: fonts.yml
-- include: redshift.yml
-#- include: screensaver.yml
-- include: wallpaper.yml
+# 'x' runs the window enviroment
 - include: x.yml
+# The drivers for graphics (cur. only nvidia)
 - include: drivers.yml
+# 'dwm' the window manager
 - include: dwm.yml
+# Install fonts (ttf-liberation & ttf-fira-mono)
+- include: fonts.yml
+# Terminal emulator
 - include: st.yml
+# Displays a wallpaper that changes every 30 minutes
+- include: wallpaper.yml
+# Makes monitors easier on your eyes at night
+- include: redshift.yml
+# Screen lock/saver
+#- include: screensaver.yml
 

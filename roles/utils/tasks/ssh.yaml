@@ -1,0 +1,10 @@
+---
+- name: Install openSSH
+  pacman: name=openssh state=present
+  become: yes
+
+# Create default ssh dir's
+
+# Consider adding request for keys as params (email ect. to autogen new keys.
+
+# Add to readme to document ssh setup as required.

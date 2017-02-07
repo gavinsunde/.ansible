@@ -1,6 +1,10 @@
 ---
+# 'tmux' is a terminal multiplexer
 - include: tmux.yml
+# 'vim' is a text editor
 - include: vim.yml
+# 'bash' is a shell
 - include: bash.yml
+# PDF read's pdf documents
 - include: pdf.yml
 

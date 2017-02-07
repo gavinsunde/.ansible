@@ -1,4 +1,7 @@
 ---
-- name: install firefox #version control
-  pacman: name=firefox state=present
-  become: yes
+# Firefox browser
+- include: browser.yml
+# Skype for chat
+# - include: skype.yml
+# Torrent client
+# - include: torrent.yml

@@ -1,10 +1,13 @@
 ---
+#
+# Install 'st' terminal emulator and a few scripts to improve startup.
+#
 - name: Create st dir.
   file: path="/home/{{ user_name }}/.gui/st" owner={{ user_name }} group={{ user_name }} state=directory
   become: yes
   become_user: "{{ user_name }}"
   
-- name: Get st source
+- name: Get my custom st source
   git: repo=https://github.com/gavinsunde/st.git dest="/home/{{ user_name }}/.gui/st"
   args:
     version: grs/0.7
@@ -19,10 +22,17 @@
   become: yes
   become_method: sudo
 
+# Attaches to or starts 'st' with a tmux session named '0'.
 - name: Copy st0 startup script
   copy: src=st0 dest=/usr/local/bin/st0
   become: yes
 
-- name: Copy st1 startup scripts
+# Attaches to or starts 'st' with a tmux session named '1'.
+- name: Copy st1 startup script
   copy: src=st1 dest=/usr/local/bin/st1
+  become: yes
+
+# Starts 'st' with a ssh session to pine
+- name: Copy pine startup script
+  copy: src=pine dest=/usr/local/bin/pine
   become: yes

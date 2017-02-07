@@ -1,4 +1,6 @@
 ---
+# Create non-rot user
 - include: user.yml
+# Install and grant user sudo privilege
 - include: sudo.yml
 

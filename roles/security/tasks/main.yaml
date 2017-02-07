@@ -1,4 +1,12 @@
 ---
-- name: install firejail #version control
-  pacman: name=firejail state=present
-  become: yes
+# Sandbox network facing software
+- include: firejail.yml
+# Security something something
+- include: grsecurity.yml
+# Protect files
+- include: backup.yml
+
+
+#- name: install firejail #version control
+#  pacman: name=firejail state=present
+#  become: yes

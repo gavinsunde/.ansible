@@ -9,13 +9,13 @@ This is the ansible config for my arch linux systems.
 [x] sudo
 ### gui
 [x] dwm compilation & config
-[x] fonts - xresource hinitng, consider liberation or ttf-dejavu. TERM USE: ttf-hack
+[x] fonts - xresource hinitng, ttf-liberation or ttf-fira-mono
 [x] wallpaper
 [ ] screensaver?
 ### ~~laptop~~ 
-### ~~media~~ 
+### media 
 [x] Audio (alsa lib)
-### ~~security~~ 
+### security 
 ### ssd
 [ ] Should review ssd lifecycle improvements.
 ### user 
@@ -24,20 +24,22 @@ This is the ansible config for my arch linux systems.
 [ ] Keep updated with any new finds.
 ### virt
 [ ] kvm (+manager)
-[ ] ~~docker~~
+[ ] docker
 ### web
 [x] browser 
 
 
 ## Ideas
 - bashrc for root
-- st config
+- ~~st config~~
 - dwm config
-- dmenu config
+- ~~dmenu config~~
 - ssh
+  - special stssh script to launch?!?!
 - Games section
   - dwarffortress in terminal
 - tags
+  - Remember, gui/tasks/drivers.yml is built for nvidia only.
 
 ## Post install
 ### SUDO

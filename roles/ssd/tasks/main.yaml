@@ -1,4 +1,5 @@
 ---
+# SSD TRIM support?!?!
 - name: install ssd tooling #version control
   pacman: name=???/? state=present
   become: yes
