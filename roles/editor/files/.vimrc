@@ -18,8 +18,6 @@ Plugin 'gmarik/vundle'
 "~/.vim/bundle/vim-colors-solarized
 Plugin 'altercation/vim-colors-solarized'
 
-Plugin 'digitaltoad/vim-jade'
-
 Plugin 'fatih/vim-go'
 
 Plugin 'ekalinin/Dockerfile.vim'
@@ -32,6 +30,8 @@ Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'plasticboy/vim-markdown'
 
+Plugin 'godlygeek/tabular'
+
 call vundle#end()
 
 filetype plugin indent on
@@ -41,11 +41,8 @@ set hidden
 
 set number
 set ruler
-"set textwidth=100
-"set colorcolumn=100
 
 syntax on
-let g:solarized_termcolors=256
 silent! colorscheme solarized
 set background=dark
 set hlsearch
@@ -55,8 +52,9 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
-inoremap jj <esc>
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 
+inoremap jj <esc>
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -67,6 +65,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+"Not sure about these, need review
 set foldnestmax=10
 set nofoldenable
 set foldlevel=6
