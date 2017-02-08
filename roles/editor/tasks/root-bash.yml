@@ -1,0 +1,6 @@
+---
+- name: Configure .bashrc
+  copy: src=.bashrc-root dest="/root/.bashrc" owner=root group=root
+  become: yes
+  become_user: root
+  

@@ -5,6 +5,8 @@
 - include: vim.yml
 # 'bash' is a shell
 - include: bash.yml
+# 'bash' is a shell and root needs it too.
+- include: root-bash.yml
 # PDF read's pdf documents
 - include: pdf.yml
 
