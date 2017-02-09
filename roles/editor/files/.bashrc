@@ -27,3 +27,5 @@ alias pacman='sudo pacman'
 alias j='journalctl'
 alias logs='journalctl'
 alias s='systemctl'
+
+set -o vi
