@@ -1,6 +1,8 @@
 ---
 # Firefox browser
 - include: browser.yml
+# Weechat IRC Client
+- include: weechat.yml
 # Skype for chat
 # - include: skype.yml
 # Torrent client

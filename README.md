@@ -41,6 +41,11 @@ This is the ansible config for my arch linux systems.
 - tags
   - Remember, gui/tasks/drivers.yml is built for nvidia only.
 
+## Pre install
+```
+$ pacstrap /mnt base base-devel git python2 python2-passlib ansible
+```
+
 ## Post install
 ### SUDO
 sudo is not enabled, use visudo to uncomment:

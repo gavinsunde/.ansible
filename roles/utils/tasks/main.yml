@@ -12,4 +12,4 @@
 # 'wget' gets url's from the web
 - include: wget.yml
 # 'ssh' connects to other systems
-- inlcude: ssh.yml
+- include: ssh.yml

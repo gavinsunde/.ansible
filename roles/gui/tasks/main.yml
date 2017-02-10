@@ -2,7 +2,7 @@
 # 'x' runs the window enviroment
 - include: x.yml
 # The drivers for graphics (cur. only nvidia)
-- include: drivers.yml
+#- include: drivers.yml
 # 'dwm' the window manager
 - include: dwm.yml
 # Install fonts (ttf-liberation & ttf-fira-mono)
