@@ -1,3 +1,5 @@
 user_name: user
 git_name: gituser
 git_email: gituser@github.com
+ssh_name: ssh_key
+ssh_comment: sshuser+hostname@ssh.com

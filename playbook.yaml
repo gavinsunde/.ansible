@@ -16,3 +16,7 @@
       encrypt: "md5_crypt" # Requires python-passlib installed on system.
       confirm: yes
       set_salt: 7
+    - name: ssh_pass
+      prompt: "Enter ssh_key password"
+      private: yes
+      confirm: yes

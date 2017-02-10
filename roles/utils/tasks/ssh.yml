@@ -3,7 +3,18 @@
   pacman: name=openssh state=present
   become: yes
 
-# Create default ssh dir's
+- name: Create ssh dir.
+  file: path="/home/{{ user_name }}/.ssh" owner={{ user_name }} group={{ user_name }} state=directory
+  become: yes
+  become_user: "{{ user_name }}"
+
+- name: Generate Keypair
+  shell: ssh-keygen -t rsa -b 4096 -f {{ ssh_name }} -N {{ ssh_pass }} -C {{ ssh_comment }}
+  args:
+    chdir: "/home/{{ user_name }}/.ssh"
+    creates: "{{ ssh_name }}.pub"
+  become: yes
+  become_user: "{{ user_name }}"
 
 # Consider adding request for keys as params (email ect. to autogen new keys.
 

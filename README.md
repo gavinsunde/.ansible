@@ -32,7 +32,7 @@ This is the ansible config for my arch linux systems.
 ## Ideas
 - bashrc for root
 - ~~st config~~
-- dwm config
+- ~~dwm config~~
 - ~~dmenu config~~
 - ssh
   - special stssh script to launch?!?!
