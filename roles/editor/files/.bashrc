@@ -11,7 +11,7 @@ export PATH=$PATH:$GOPATH/bin
 
 force_color_prompt=yes
 
-PS1='\[\033[0;32m\]\u:\[\033[0;33m\]\w \[\033[0;32m\]\$ \[\033[0;00m\]'
+PS1='\[\033[0;32m\]\u\[\033[0;34m\]@\h:\[\033[0;33m\]\w \[\033[0;32m\]\$ \[\033[0;00m\]'
 
 export PATH=$PATH:./
 
