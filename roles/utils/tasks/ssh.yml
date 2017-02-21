@@ -16,6 +16,4 @@
   become: yes
   become_user: "{{ user_name }}"
 
-# Consider adding request for keys as params (email ect. to autogen new keys.
-
 # Add to readme to document ssh setup as required.

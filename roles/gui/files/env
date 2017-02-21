@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if tmux ls
+then
+  exec st -e tmux attach -t env
+else
+  exec st -e tmux new -s env
+fi

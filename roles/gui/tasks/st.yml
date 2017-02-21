@@ -36,3 +36,8 @@
 - name: Copy pine startup script
   copy: src=pine dest=/usr/local/bin/pine
   become: yes
+
+# Attaches to or starts 'st' with a tmux session named 'env' to run music/irc/ect.
+- name: Copy env startup script
+  copy: src=env dest=/usr/local/bin/env
+  become: yes
