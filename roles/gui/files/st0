@@ -1,9 +1,8 @@
 #!/bin/bash
 
 
-if tmux ls
-then
-  exec st -e tmux attach -t 0
+if [[ $(tmux ls) == *"0:"* ]]; then
+	exec st -e tmux attach -t 0
 else
-  exec st -e tmux new -s 0
+	exec st -e tmux new -s 0
 fi
